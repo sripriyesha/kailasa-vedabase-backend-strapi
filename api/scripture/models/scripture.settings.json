@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scriptures",
+  "info": {
+    "name": "Scripture"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

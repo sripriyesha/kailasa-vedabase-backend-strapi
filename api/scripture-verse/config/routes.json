@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/scripture-verses",
+      "handler": "scripture-verse.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scripture-verses/count",
+      "handler": "scripture-verse.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scripture-verses/:id",
+      "handler": "scripture-verse.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/scripture-verses",
+      "handler": "scripture-verse.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/scripture-verses/:id",
+      "handler": "scripture-verse.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/scripture-verses/:id",
+      "handler": "scripture-verse.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

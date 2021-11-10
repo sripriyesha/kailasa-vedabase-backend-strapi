@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scripture_verses",
+  "info": {
+    "name": "ScriptureVerse"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sutraNumber": {
+      "type": "string"
+    }
+  }
+}

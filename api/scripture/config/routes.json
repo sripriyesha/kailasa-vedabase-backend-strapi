@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/scriptures",
+      "handler": "scripture.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scriptures/count",
+      "handler": "scripture.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scriptures/:id",
+      "handler": "scripture.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/scriptures",
+      "handler": "scripture.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/scriptures/:id",
+      "handler": "scripture.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/scriptures/:id",
+      "handler": "scripture.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
