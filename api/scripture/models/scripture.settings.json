@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "scriptures",
   "info": {
-    "name": "Scripture"
+    "name": "Scripture",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -13,6 +14,10 @@
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "scripture_verses": {
+      "via": "scripture",
+      "collection": "scripture-verse"
     }
   }
 }
