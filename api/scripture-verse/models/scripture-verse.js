@@ -13,11 +13,6 @@ module.exports = {
       if (data.transliteration) {
         data.slug = slugify(data.transliteration);
       }
-    },
-    async beforeUpdate(params, data) {
-      if (data.transliteration) {
-        data.slug = slugify(data.transliteration);
-      }
-    },
+    }
   },
 };
