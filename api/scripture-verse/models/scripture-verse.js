@@ -8,11 +8,16 @@
 const slugify = require('slugify');
 
 module.exports = {
-    beforeSave: async (model, attrs, options) => {
-        if (options.method === 'insert' && attrs.title) {
-            model.set('slug', slugify(attrs.transliteration, {lower: true}));
-        } else if (options.method === 'update' && attrs.title) {
-            attrs.slug = slugify(attrs.transliteration, {lower: true});
-        }
+  lifecycles: {
+    async beforeCreate(data) {
+      if (data.transliteration) {
+        data.slug = slugify(data.transliteration);
+      }
     },
+    async beforeUpdate(params, data) {
+      if (data.transliteration) {
+        data.slug = slugify(data.transliteration);
+      }
+    },
+  },
 };
