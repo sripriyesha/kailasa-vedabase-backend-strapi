@@ -19,7 +19,9 @@
       "type": "text"
     },
     "transliteration": {
-      "type": "text"
+      "type": "text",
+      "required": true,
+      "unique": true
     },
     "translationAurobindoEnglish": {
       "type": "text"

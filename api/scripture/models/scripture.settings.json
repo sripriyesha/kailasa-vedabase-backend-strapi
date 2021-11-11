@@ -13,11 +13,13 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "scriptureVerses": {
-      "collection": "scripture-verse",
-      "via": "scripture"
+      "via": "scripture",
+      "collection": "scripture-verse"
     },
     "slug": {
       "type": "uid",
