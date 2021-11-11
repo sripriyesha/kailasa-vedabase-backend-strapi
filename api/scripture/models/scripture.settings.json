@@ -15,9 +15,13 @@
     "title": {
       "type": "string"
     },
-    "scripture_verses": {
-      "via": "scripture",
-      "collection": "scripture-verse"
+    "scriptureVerses": {
+      "collection": "scripture-verse",
+      "via": "scripture"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }

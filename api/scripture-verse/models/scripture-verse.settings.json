@@ -33,9 +33,13 @@
     "translationSriNithyanandaParamashivam": {
       "type": "text"
     },
+    "slug": {
+      "type": "uid",
+      "targetField": "transliteration"
+    },
     "scripture": {
-      "model": "scripture",
-      "via": "scripture_verses"
+      "via": "scriptureVerses",
+      "model": "scripture"
     }
   }
 }
