@@ -5,11 +5,16 @@
  * to customize this model
  */
 
-const slugify = require('slugify');
+const slugify = require('slug');
 
 module.exports = {
   lifecycles: {
     async beforeCreate(data) {
+      if (data.title) {
+        data.slug = slugify(data.title);
+      }
+    },
+    async beforeUpdate(params, data) {
       if (data.title) {
         data.slug = slugify(data.title);
       }

@@ -5,7 +5,7 @@
  * to customize this model
  */
 
-const slugify = require('slugify');
+const slugify = require('slug');
 
 module.exports = {
   lifecycles: {
@@ -13,6 +13,11 @@ module.exports = {
       if (data.transliteration) {
         data.slug = slugify(data.transliteration);
       }
-    }
+    },
+    async beforeUpdate(params, data) {
+      if (data.transliteration) {
+        data.slug = slugify(data.transliteration);
+      }
+    },
   },
 };
