@@ -39,7 +39,7 @@
     "slug": {
       "type": "uid",
       "targetField": "transliteration",
-      "required": true
+      "required": false
     },
     "scripture": {
       "via": "scriptureVerses",
