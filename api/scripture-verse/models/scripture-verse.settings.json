@@ -37,7 +37,8 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "transliteration"
+      "targetField": "transliteration",
+      "required": true
     },
     "scripture": {
       "via": "scriptureVerses",
