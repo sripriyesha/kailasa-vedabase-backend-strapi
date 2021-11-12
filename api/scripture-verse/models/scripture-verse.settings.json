@@ -21,7 +21,8 @@
     "transliteration": {
       "type": "text",
       "required": true,
-      "unique": true
+      "unique": true,
+      "maxLength": 1024
     },
     "translationAurobindoEnglish": {
       "type": "text"

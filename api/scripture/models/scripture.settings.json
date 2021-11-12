@@ -15,7 +15,8 @@
     "title": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": true,
+      "maxLength": 256
     },
     "scriptureVerses": {
       "via": "scripture",
