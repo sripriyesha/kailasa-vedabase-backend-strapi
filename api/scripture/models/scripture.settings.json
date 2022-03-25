@@ -26,6 +26,9 @@
       "type": "uid",
       "targetField": "title",
       "required": false
+    },
+    "scriptureCategory": {
+      "model": "scripture-category"
     }
   }
 }

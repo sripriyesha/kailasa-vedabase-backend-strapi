@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scripture_categories",
+  "info": {
+    "name": "ScriptureCategory",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "scriptureCategoryParent": {
+      "model": "scripture-category"
+    }
+  }
+}
