@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "book_chapters",
+  "info": {
+    "name": "BookChapter",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "book": {
+      "model": "book"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

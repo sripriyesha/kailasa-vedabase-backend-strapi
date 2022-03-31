@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/book-chapters",
+      "handler": "book-chapter.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/book-chapters/count",
+      "handler": "book-chapter.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/book-chapters/:id",
+      "handler": "book-chapter.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/book-chapters",
+      "handler": "book-chapter.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/book-chapters/:id",
+      "handler": "book-chapter.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/book-chapters/:id",
+      "handler": "book-chapter.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
