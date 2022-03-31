@@ -23,6 +23,10 @@
     },
     "order": {
       "type": "integer"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }
