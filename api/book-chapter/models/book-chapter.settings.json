@@ -18,15 +18,16 @@
     "content": {
       "type": "richtext"
     },
-    "book": {
-      "model": "book"
-    },
     "order": {
       "type": "integer"
     },
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "book": {
+      "via": "bookChapters",
+      "model": "book"
     }
   }
 }
