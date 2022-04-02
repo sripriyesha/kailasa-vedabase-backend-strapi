@@ -18,7 +18,7 @@
       "unique": true,
       "maxLength": 256
     },
-    "scriptureVerses": {
+    "scripture_verses": {
       "via": "scripture",
       "collection": "scripture-verse"
     },
@@ -27,7 +27,7 @@
       "targetField": "title",
       "required": false
     },
-    "scriptureCategory": {
+    "scripture_category": {
       "model": "scripture-category"
     }
   }

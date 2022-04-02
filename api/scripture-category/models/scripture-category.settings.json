@@ -19,7 +19,7 @@
       "type": "uid",
       "targetField": "name"
     },
-    "scriptureCategoryParent": {
+    "scripture_category_parent": {
       "model": "scripture-category"
     }
   }

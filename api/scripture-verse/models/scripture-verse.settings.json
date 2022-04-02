@@ -12,10 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "sutraNumber": {
+    "sutra_number": {
       "type": "string"
     },
-    "sanskritSutra": {
+    "sanskrit_sutra": {
       "type": "text"
     },
     "transliteration": {
@@ -24,16 +24,16 @@
       "unique": true,
       "maxLength": 1024
     },
-    "translationAurobindoEnglish": {
+    "translation_aurobindo_english": {
       "type": "text"
     },
-    "translationAurobindoHindi": {
+    "translation_aurobindo_hindi": {
       "type": "text"
     },
     "glossary": {
       "type": "text"
     },
-    "translationSriNithyanandaParamashivam": {
+    "translation_sri_nithyananda_paramashivam": {
       "type": "text"
     },
     "slug": {
@@ -42,7 +42,7 @@
       "required": false
     },
     "scripture": {
-      "via": "scriptureVerses",
+      "via": "scripture_verses",
       "model": "scripture"
     }
   }
