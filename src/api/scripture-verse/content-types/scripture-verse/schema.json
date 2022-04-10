@@ -4,7 +4,8 @@
   "info": {
     "singularName": "scripture-verse",
     "pluralName": "scripture-verses",
-    "displayName": "ScriptureVerse"
+    "displayName": "ScriptureVerse",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,7 +16,7 @@
       "type": "string"
     },
     "sanskrit_sutra": {
-      "type": "string"
+      "type": "text"
     },
     "transliteration": {
       "type": "text"
