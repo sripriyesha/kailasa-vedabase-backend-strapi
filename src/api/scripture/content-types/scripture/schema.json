@@ -4,7 +4,8 @@
   "info": {
     "singularName": "scripture",
     "pluralName": "scriptures",
-    "displayName": "Scripture"
+    "displayName": "Scripture",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,6 +24,11 @@
       "relation": "oneToMany",
       "target": "api::scripture-verse.scripture-verse",
       "mappedBy": "scripture"
+    },
+    "scripture_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::scripture-category.scripture-category"
     }
   }
 }
