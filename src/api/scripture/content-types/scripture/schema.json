@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scriptures",
+  "info": {
+    "singularName": "scripture",
+    "pluralName": "scriptures",
+    "displayName": "Scripture"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "scripture_verses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::scripture-verse.scripture-verse",
+      "mappedBy": "scripture"
+    }
+  }
+}

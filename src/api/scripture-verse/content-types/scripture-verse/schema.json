@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scripture_verses",
+  "info": {
+    "singularName": "scripture-verse",
+    "pluralName": "scripture-verses",
+    "displayName": "ScriptureVerse"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sutra_number": {
+      "type": "string"
+    },
+    "sanskrit_sutra": {
+      "type": "string"
+    },
+    "transliteration": {
+      "type": "text"
+    },
+    "translation_aurobindo_english": {
+      "type": "text"
+    },
+    "translation_aurobindo_hindi": {
+      "type": "text"
+    },
+    "glossary": {
+      "type": "text"
+    },
+    "translation_sri_nithyananda_paramashivam": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "transliteration"
+    },
+    "scripture": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::scripture.scripture",
+      "inversedBy": "scripture_verses"
+    }
+  }
+}
