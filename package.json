@@ -13,7 +13,7 @@
   "dependencies": {
     "knex": "0.21.18",
     "mime-types": "^2.1.27",
-    "mysql2": "^2.3.3",
+    "mysql": "^2.18.1",
     "slug": "^5.1.0",
     "sqlite3": "5.0.0",
     "@strapi/strapi": "4.1.7",
